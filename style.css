@@ -373,4 +373,26 @@
   .contact-me:hover {
     background: linear-gradient(to right, rgba(83, 200, 239, 1) 0%, rgba(81, 106, 204, 1) 96%);
   }
-  
+
+  .card {
+    max-width: 340px;
+    margin: auto;
+    overflow-y: auto;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    background-color: white;
+    display: flex;
+    transition: 0.3s;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    .card {
+        max-width: 600px; /* Adjust the width as needed */
+    }
+}
+
